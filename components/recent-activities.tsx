@@ -24,14 +24,14 @@ export default function RecentActivities() {
       icon: '✓',
       iconBg: 'bg-green-600',
     },
-    {
-      id: 4,
-      title: 'Magnet AXIOM case updated',
-      description: 'Case ID: 2025-0510-01',
-      time: 'Yesterday',
-      icon: '🔵',
-      iconBg: 'bg-blue-600',
-    },
+    // {
+    //   id: 4,
+    //   title: 'Magnet AXIOM case updated',
+    //   description: 'Case ID: 2025-0510-01',
+    //   time: 'Yesterday',
+    //   icon: '🔵',
+    //   iconBg: 'bg-blue-600',
+    // },
     {
       id: 5,
       title: 'New IOC match in Threat Intel',

@@ -14,7 +14,7 @@ export default function AssessmentModules({
       icon: '🛡️',
       color: 'from-blue-800 to-blue-1000',
       stats: [
-        { label: 'Critical Findings', value: '18', sublabel: '10 minutes ago' },
+        { label: 'Critical Findings', value: '18' },
         { label: 'Last Scan', value: 'Last Scan' },
       ],
       button: 'Open Workspace',
@@ -31,18 +31,18 @@ export default function AssessmentModules({
       ],
       button: 'Open Workspace',
     },
-    {
-      id: 3,
-      title: 'Digital Forensic',
-      description: 'Investigate digital evidence and discover attack artifacts.',
-      icon: '🔍',
-      color: 'from-teal-800 to-teal-1000',
-      stats: [
-        { label: 'Active Cases', value: '5' },
-        { label: 'Recent Evidence', value: 'Laptop-001' },
-      ],
-      button: 'Open Workspace',
-    },
+    // {
+    //   id: 3,
+    //   title: 'Digital Forensic',
+    //   description: 'Investigate digital evidence and discover attack artifacts.',
+    //   icon: '🔍',
+    //   color: 'from-teal-800 to-teal-1000',
+    //   stats: [
+    //     { label: 'Active Cases', value: '5' },
+    //     { label: 'Recent Evidence', value: 'Laptop-001' },
+    //   ],
+    //   button: 'Open Workspace',
+    // },
     {
       id: 4,
       title: 'Malware Analysis',
@@ -58,11 +58,11 @@ export default function AssessmentModules({
   ]
 
   return (
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {modules.map((module) => (
         <div
           key={module.id}
-          className="bg-slate-900 rounded-lg border border-slate-800 overflow-hidden hover:border-slate-700 transition-colors"
+          className="bg-[#001824] rounded-lg border border-slate-800 overflow-hidden hover:border-slate-700 transition-colors"
         >
           <div className={`bg-gradient-to-r ${module.color} px-6 py-4`}>
             <div className="flex items-start justify-between">
@@ -87,7 +87,7 @@ export default function AssessmentModules({
             </div>
             <button
               onClick={() => setCurrentPage(module.page)}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-sm transition-colors"
+              className="w-full bg-cyan-900 hover:bg-cyan-700 text-cyan- font-semibold py-2 px-4 rounded text-sm transition-colors"
             >
               {module.button} →
             </button>

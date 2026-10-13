@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'DANAWA Cyber Lab - Executive Dashboard',
+  title: 'Oxygen - Executive Dashboard',
   description: 'Cybersecurity assessment and threat intelligence platform',
   generator: 'v0.app',
 }

@@ -30,7 +30,7 @@ export default function MetricCard({
   change,
   subtitle,
   icon,
-  color = 'bg-[#12181e]',
+  color = 'bg-[#06384c]',
   layout = 'horizontal',
   compact = false,
 }: MetricCardProps) {
@@ -38,10 +38,10 @@ export default function MetricCard({
 
   if (compact) {
     return (
-      <div className="bg-slate-900 rounded-lg border border-slate-800 p-4">
+      <div className="bg-[#001824] border border-slate-800 p-4">
         <div className="flex items-start justify-between mb-4">
           <div>
-            <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">{title}</p>
+            <p className="text-xs text-cyan-200 uppercase tracking-wide mb-1">{title}</p>
             <div className="flex items-baseline gap-1">
               <span className="text-2xl font-bold text-white">{value}</span>
               {maxValue && <span className="text-sm text-slate-400">{maxValue}</span>}
@@ -68,7 +68,7 @@ export default function MetricCard({
 
   if (layout === 'vertical') {
     return (
-      <div className="bg-slate-900 rounded-lg border border-slate-800 p-6">
+      <div className="bg-[#001824] border border-slate-800 p-6">
         <div className="flex items-start justify-between mb-4">
           <div>
             <p className="text-sm text-slate-400 uppercase tracking-wide mb-2">{title}</p>
@@ -110,7 +110,7 @@ export default function MetricCard({
   }
 
   return (
-    <div className="bg-slate-900 rounded-lg border border-slate-800 p-6">
+    <div className="bg-[#001824] border border-slate-800 p-6">
       <div className="flex items-start justify-between mb-4">
         <div>
           <p className="text-sm text-slate-400 uppercase tracking-wide mb-2">{title}</p>

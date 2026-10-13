@@ -10,10 +10,10 @@ export default function ComplianceOverview() {
   ]
 
   return (
-    <div className="bg-slate-900 rounded-lg border border-slate-800 p-6">
+    <div className="bg-[#001824] border border-slate-800 p-6">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-lg font-semibold text-white">Compliance Overview</h2>
-        <button className="text-blue-500 hover:text-blue-400 text-sm font-semibold">
+        <h2 className="text-lg font-semibold text-cyan-200">Compliance Overview</h2>
+        <button className="text-cyan-500 hover:text-cyan-400 text-sm font-semibold">
           View Full Report
         </button>
       </div>
@@ -46,7 +46,7 @@ export default function ComplianceOverview() {
               <p className="text-xs text-slate-400">Compliant</p>
               <p className="text-xs font-semibold text-slate-300 mt-1">{framework.name}</p>
             </div>
-            <button className="mt-2 text-xs text-blue-500 hover:text-blue-400 font-semibold">
+            <button className="mt-2 text-xs text-cyan-500 hover:text-cyan-400 font-semibold">
               Details →
             </button>
           </div>

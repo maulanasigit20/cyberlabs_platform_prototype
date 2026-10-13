@@ -1,4 +1,14 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+'use client'
+
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts'
 
 const data = [
   { date: 'Apr 18', critical: 25, high: 45, medium: 60, low: 35 },
@@ -10,53 +20,63 @@ const data = [
 
 export default function VulnOverTime() {
   return (
-    <ResponsiveContainer width="100%" height={280}>
-      <LineChart data={data} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
-        <XAxis dataKey="date" tick={{ fill: '#94a3b8', fontSize: 12 }} />
-        <YAxis tick={{ fill: '#94a3b8', fontSize: 12 }} />
-        <Tooltip
-          contentStyle={{
-            backgroundColor: '#1e293b',
-            border: '1px solid #334155',
-            borderRadius: '8px',
-          }}
-          labelStyle={{ color: '#f1f5f9' }}
-        />
-        <Legend wrapperStyle={{ paddingTop: '20px' }} />
-        <Line
-          type="monotone"
-          dataKey="critical"
-          stroke="#ef4444"
-          dot={false}
-          strokeWidth={2}
-          name="Critical"
-        />
-        <Line
-          type="monotone"
-          dataKey="high"
-          stroke="#f97316"
-          dot={false}
-          strokeWidth={2}
-          name="High"
-        />
-        <Line
-          type="monotone"
-          dataKey="medium"
-          stroke="#eab308"
-          dot={false}
-          strokeWidth={2}
-          name="Medium"
-        />
-        <Line
-          type="monotone"
-          dataKey="low"
-          stroke="#22c55e"
-          dot={false}
-          strokeWidth={2}
-          name="Low"
-        />
-      </LineChart>
-    </ResponsiveContainer>
+    <div className="h-52 w-full">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#101d25" vertical={false} />
+          <XAxis
+            dataKey="date"
+            tick={{ fill: '#64748b', fontSize: 10 }}
+            axisLine={{ stroke: '#162630' }}
+            tickLine={false}
+          />
+          <YAxis
+            tick={{ fill: '#64748b', fontSize: 10 }}
+            axisLine={{ stroke: '#162630' }}
+            tickLine={false}
+          />
+          <Tooltip
+            contentStyle={{
+              backgroundColor: '#0b1720',
+              borderColor: '#162630',
+              fontSize: '11px',
+              color: '#f8fafc',
+            }}
+          />
+          <Line
+            type="monotone"
+            dataKey="critical"
+            stroke="#ef4444"
+            dot={false}
+            strokeWidth={2}
+            name="Critical"
+          />
+          <Line
+            type="monotone"
+            dataKey="high"
+            stroke="#f97316"
+            dot={false}
+            strokeWidth={2}
+            name="High"
+          />
+          <Line
+            type="monotone"
+            dataKey="medium"
+            stroke="#eab308"
+            dot={false}
+            strokeWidth={2}
+            name="Medium"
+          />
+          <Line
+            type="monotone"
+            dataKey="low"
+            stroke="#3b82f6"
+            dot={false}
+            strokeWidth={2}
+            name="Low"
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
   )
 }
