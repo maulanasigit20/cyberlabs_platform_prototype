@@ -82,9 +82,9 @@ export default function Sidebar({
             </div>
 
             <div className="text-[9px] leading-tight text-slate-500 mt-0.5">
-              Integrated Cyber Operations
+              Operational eXcellence for 
               <br />
-              & Digital Forensics Platform
+              Your Governance, Evidence & Network
             </div>
           </div>
 
