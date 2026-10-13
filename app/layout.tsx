@@ -3,9 +3,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Oxygen - Executive Dashboard',
+  title: 'Oxygen',
   description: 'Cybersecurity assessment and threat intelligence platform',
-  generator: 'v0.app',
+  generator: 'v1.app',
 }
 
 export const viewport: Viewport = {
