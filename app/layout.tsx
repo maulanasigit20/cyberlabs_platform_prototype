@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Oxygen',
-  description: 'Integrated Cyber Operations& Digital Forensics Platform',
+  description: 'Integrated Cyber Operations & Digital Forensics Platform',
   generator: 'v1.app',
 }
 
