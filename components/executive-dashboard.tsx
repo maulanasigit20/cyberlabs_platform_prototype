@@ -94,9 +94,18 @@ export default function ExecutiveDashboard({
           <div>
             <div className="flex items-center gap-2 mb-1">
               <Zap className="w-4 h-4 text-cyan-400" />
-              <span className="text-[10px] uppercase tracking-[0.18em] text-cyan-500">
-                OXYGEN
-              </span>
+              <div className="flex flex-col min-w-0">
+                {/* Container teks dengan huruf X yang lebih besar di tengah */}
+                <div className="text-[10px] uppercase tracking-[0.18em] text-cyan-500">
+                  <span>I</span>
+                  <span>N</span>
+                  {/* Huruf X dibuat lebih besar, mencolok, dan diberi efek gradient/warna terang */}
+                  <span className="text-[12px] text-cyan-200 mx-0.5 font-extrabold drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]">
+                    X
+                  </span>
+                  <span>PECTOR</span>
+                </div>
+              </div>
             </div>
             <h1 className="text-xl font-semibold text-white">
               Executive Dashboard

@@ -77,15 +77,20 @@ export default function Sidebar({
           />
 
           <div className="flex flex-col min-w-0">
-            <div className="text-[18px] font-bold tracking-wide text-cyan-400">
-              OXYGEN
+            {/* Container teks dengan huruf X yang lebih besar di tengah */}
+            <div className="flex items-center text-[18px] font-bold tracking-wide text-cyan-400">
+              <span>I</span>
+              <span>N</span>
+              {/* Huruf X dibuat lebih besar, mencolok, dan diberi efek gradient/warna terang */}
+              <span className="text-2xl text-cyan-200 mx-0.5 font-extrabold drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]">
+                X
+              </span>
+              <span>PECTOR</span>
             </div>
-
-            <div className="text-[9px] leading-tight text-slate-500 mt-0.5">
-              Operational eXcellence for 
-              <br />
-              Your Governance, Evidence & Network
-            </div>
+            
+            {/* <span className="text-[10px] tracking-wider text-slate-400 uppercase">
+              Cyber Lab
+            </span> */}
           </div>
 
         </div>

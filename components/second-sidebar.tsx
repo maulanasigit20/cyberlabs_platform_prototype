@@ -192,13 +192,18 @@ const menuItems =
             <div className="flex flex-col min-w-0">
 
               <div className="text-[18px] font-bold tracking-wide">
-                <span className="text-white">OXY </span>
+                  <span>I</span>
+                  <span>N</span>
+                  {/* Huruf X dibuat lebih besar, mencolok, dan diberi efek gradient/warna terang */}
+                  <span className="text-[18px] text-cyan-200 mx-0.5 font-extrabold drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]">
+                    X 
+                  </span>
                 <span className="text-cyan-400">
                   {currentPage === 'malware-analysis'
-                    ? 'MA'
+                    ? ' MA'
                     : currentPage === 'penetration-testing'
-                      ? 'PT'
-                      : 'VA'}
+                      ? ' PT'
+                      : ' VA'}
                 </span>
               </div>
 
